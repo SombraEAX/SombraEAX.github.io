@@ -1,0 +1,149 @@
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "air"
+
+locale: "en-US"
+title: "Mira Kannot"
+title_separator: "-"
+subtitle: "Senior Fullstack & IoT Engineer"
+name: "Mira Kannot"
+description: "Senior Fullstack & IoT Engineer. Building web, desktop, and IoT solutions."
+url: ""
+baseurl: ""
+repository: "SombraEAX/blog"
+
+masthead_title: "Mira Kannot"
+breadcrumbs: true
+words_per_minute: 200
+
+twitter:
+  username: ""
+facebook:
+  username: ""
+og_image: "/assets/images/profile.png"
+
+author:
+  name: "Mira Kannot"
+  avatar: "/assets/images/profile.png"
+  bio: "Senior Fullstack & IoT Engineer. 10 years exp. in JS/TS, React, Vue, Electron, Python, Go, PHP. IoT & AI enthusiast."
+  location: "Buenos Aires, Argentina"
+  email:
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-square-envelope"
+      url: "mailto:sombra.eax@gmail.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/SombraEAX"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/mira-kannot/"
+
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/SombraEAX"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/mira-kannot/"
+
+include:
+  - _pages
+
+exclude:
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - vendor
+  - .asset-cache
+  - .bundle
+  - .sass-cache
+  - assets/js/plugins
+  - assets/js/_main.js
+  - assets/js/vendor
+  - Capfile
+  - CHANGELOG
+  - config
+  - Gemfile
+  - Gruntfile.js
+  - gulpfile.js
+  - LICENSE
+  - log
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - README
+  - tmp
+  - .gitignore
+
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+permalink: /:categories/:title/
+timezone: America/Argentina/Buenos_Aires
+
+paginate: 5
+paginate_path: /page:num/
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+whitelist:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+  - jekyll-include-cache
+
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: true
+      share: true
+      related: true
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true

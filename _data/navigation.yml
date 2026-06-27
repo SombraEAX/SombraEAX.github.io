@@ -1,0 +1,5 @@
+main:
+  - title: "Portfolio"
+    url: /
+  - title: "Posts"
+    url: /posts/
