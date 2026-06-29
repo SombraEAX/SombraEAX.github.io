@@ -200,6 +200,8 @@ author_profile: true
   overflow: hidden;
   background: #fff;
   transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 .project-card:hover {
   box-shadow: 0 4px 16px rgba(0,0,0,0.1);
@@ -213,6 +215,15 @@ author_profile: true
 }
 .project-card-body {
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+.project-card-actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
 }
 .project-card-body h3 {
   margin: 0 0 0.3em;
@@ -274,7 +285,9 @@ author_profile: true
       <span class="tech-badge" style="background:#2d2d2d">Electron</span>
       <span class="tech-badge" style="background:#4fc08d;color:#000">Vue</span>
     </div>
-    <a href="https://github.com/SombraEAX/file-manager" class="project-btn">View on GitHub</a>
+    <div class="project-card-actions">
+      <a href="https://github.com/SombraEAX/file-manager" class="project-btn">View on GitHub</a>
+    </div>
   </div>
 </div>
 
@@ -289,8 +302,10 @@ author_profile: true
       <span class="tech-badge" style="background:#7952b3">Bootstrap</span>
       <span class="tech-badge" style="background:#003b57">SQLite</span>
     </div>
-    <a href="https://github.com/SombraEAX/online-school" class="project-btn">View on GitHub</a>
-    <a href="https://online-school-7xtl.onrender.com/" class="project-btn project-btn-demo">Live Demo</a>
+    <div class="project-card-actions">
+      <a href="https://github.com/SombraEAX/online-school" class="project-btn">View on GitHub</a>
+      <a href="https://online-school-7xtl.onrender.com/" class="project-btn project-btn-demo">Live Demo</a>
+    </div>
   </div>
 </div>
 
@@ -305,7 +320,9 @@ author_profile: true
       <span class="tech-badge" style="background:#646cff">Vite</span>
       <span class="tech-badge" style="background:#2d2d2d">Electron</span>
     </div>
-    <a href="https://github.com/SombraEAX/chatbot" class="project-btn">View on GitHub</a>
+    <div class="project-card-actions">
+      <a href="https://github.com/SombraEAX/chatbot" class="project-btn">View on GitHub</a>
+    </div>
   </div>
 </div>
 
